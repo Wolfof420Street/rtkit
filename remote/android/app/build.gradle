@@ -54,6 +54,13 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
+
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.browser:browser:1.8.0'
+        }
+    }
+
     kotlinOptions {
         jvmTarget = '17'
     }

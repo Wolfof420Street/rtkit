@@ -35,6 +35,12 @@ class _SettingsState extends State<Settings> {
                   onTap: () =>
                       openUrl(Uri.parse("https://discord.gg/UKHJMQs74u")),
                 ),
+                ListTile(
+                  title: const Text("Rtkit Web"),
+                  subtitle: const Text("Find us on the web!"),
+                  trailing: const Icon(Icons.launch),
+                  onTap: () => openUrl(Uri.parse("https://kit.rtirl.com/")),
+                ),
                 Padding(
                   padding: const EdgeInsets.all(16),
                   child: Text(
