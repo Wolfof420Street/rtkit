@@ -144,8 +144,8 @@ class ControlScreen extends StatelessWidget {
                             ),
                             _ControlBox(
                               title: 'Save Replay',
-                              boxColor: yellow.withOpacity(
-                                  channelStatus.obsReplayBuffer == 'started'
+                              boxColor: yellow.withValues(
+                                  alpha : channelStatus.obsReplayBuffer == 'started'
                                       ? 1
                                       : 0.4),
                               icon: Icons.save_alt,
